@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: SortServiceTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.729 sec <<< FAILURE!
-SortServiceTest.testSort()  Time elapsed: 1.728 sec  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "MergeSort.sort(int[])" because "this.mockMergeSort" is null
-	at SortServiceTest.testSort(SortServiceTest.java:26)
-

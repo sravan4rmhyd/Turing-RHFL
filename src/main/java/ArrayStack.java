@@ -1,4 +1,4 @@
-import java.util.Arrays;
+/*import java.util.Arrays;
 
 public class ArrayStack<E> {
 
@@ -71,12 +71,9 @@ public class ArrayStack<E> {
         return Arrays.toString(Arrays.copyOfRange(elements, 0, size));
     }
 
-    // Best Practice: Add clear and concise JavaDocs
-    /**
-     * Clears the stack, removing all elements.
-     */
+
     public void clear() {
         size = 0;
         elements = Arrays.copyOf(elements, DEFAULT_CAPACITY); // Resize to default on clear
     }
-}
+}*/

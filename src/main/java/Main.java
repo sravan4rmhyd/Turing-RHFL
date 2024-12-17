@@ -1,29 +1,38 @@
+import java.util.Comparator;
+
 public class Main {
     public static void main(String[] args) {
-        // Create a container for String type
-        Container<String> stringContainer = new Container<String>();
+        // Create a GenericCollection for Integer type
+        GenericCollection<Integer> intCollection = new GenericCollection<Integer>();
 
         // Adding items
-        stringContainer.addItem("Hello");
-        stringContainer.addItem("World");
+        intCollection.addItem(5);
+        intCollection.addItem(2);
+        intCollection.addItem(8);
+        intCollection.addItem(1);
 
-        // Accessing items
-        System.out.println("Item at index 0: " + stringContainer.getItem(0)); // Output: Hello
-        System.out.println("Size of container: " + stringContainer.size()); // Output: 2
+        // Size of the collection
+        System.out.println("Size of collection: " + intCollection.size()); // Output: 4
 
-        // Create a container for Integer type
-        Container<Integer> integerContainer = new Container<Integer>();
+        // Sorting the collection
+        intCollection.sort(Comparator.naturalOrder());
+        System.out.println("Sorted collection:");
+        for (int i = 0; i < intCollection.size(); i++) {
+            System.out.print(intCollection.getItem(i) + " "); // Output: 1 2 5 8
+        }
+        System.out.println();
 
-        // Adding items
-        integerContainer.addItem(10);
-        integerContainer.addItem(20);
-
-        // Accessing items
-        System.out.println("Item at index 0: " + integerContainer.getItem(0)); // Output: 10
-        System.out.println("Size of container: " + integerContainer.size()); // Output: 2
+        // Searching for an item
+        int searchItem = 5;
+        int index = intCollection.search(searchItem);
+        if (index >= 0) {
+            System.out.println("Item " + searchItem + " found at index: " + index);
+        } else {
+            System.out.println("Item " + searchItem + " not found.");
+        }
 
         // Removing an item
-        integerContainer.removeItem(10);
-        System.out.println("Size after removal: " + integerContainer.size()); // Output: 1
+        intCollection.removeItem(2);
+        System.out.println("Size after removal: " + intCollection.size()); // Output: 3
     }
 }
