@@ -1,4 +1,4 @@
-package Memory462084;
+/*package Memory462084;
 public class MemoryManagementDemo2 {
     static class Data {
         String info;
@@ -55,4 +55,4 @@ public class MemoryManagementDemo2 {
             e.printStackTrace();
         }
     }
-}
+}*/
