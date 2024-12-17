@@ -50,7 +50,7 @@
                 </execution>
             </executions>
             <configuration>
-                <mainClass>refactor462120.OrderB</mainClass>
+                <mainClass>Memory462084.MemoryManagementDemo2</mainClass>
             </configuration>
         </plugin>
     </plugins>
