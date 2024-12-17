@@ -50,7 +50,7 @@
                 </execution>
             </executions>
             <configuration>
-                <mainClass>Memory462107.Vector2B</mainClass>
+                <mainClass>Memory462554.NIOvsIOFileReading</mainClass>
             </configuration>
         </plugin>
     </plugins>
