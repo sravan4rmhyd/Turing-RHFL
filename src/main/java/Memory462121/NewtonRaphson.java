@@ -1,4 +1,4 @@
-package P462121;
+package Memory462121;
 public class NewtonRaphson {
 
     // Function for which we want to find the root
